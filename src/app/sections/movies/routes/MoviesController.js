@@ -1,8 +1,10 @@
 class MoviesController {
 
   /* @ngInject */
-  constructor() {
+  constructor(moviesService) {
     this.message = 'Movies';
+
+    this.movies = moviesService.getMovies();
   }
 
 }

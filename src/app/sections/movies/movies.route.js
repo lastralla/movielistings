@@ -26,22 +26,9 @@ function moviesModuleRun(routerHelper) {
             controller: MoviesController,
             controllerAs: 'vm',
             templateUrl: require('./routes/movies.html')
-          },
-          'subNavigation': {
-            // templateUrl: require('./goals-list.html')
-          },
-          'primaryFilters': {
-            // templateUrl: require('../../common/layout/app-layout/primary-filters.html')
           }
         },
-        title: 'Movies',
-        data: {
-          topLevelNav: {
-            order: 4,
-            label: 'Movies',
-            linkContent: '<i class="fa fa-dot-circle-o"></i>'
-          }
-        }
+        title: 'Movies'
       }
     }];
 

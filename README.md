@@ -13,6 +13,11 @@ Setup project
 > npm install
 ```
 
+## Add API TOKEN
+
+Search code `<KEYHERE>` and replace string with token. (This should ideally be in a config file.)
+
+
 To build project
 
 ```

@@ -19,11 +19,23 @@ function moviesService($http, API_PATH, DEFAULT_IMAGES_FOLDER) {
   ////////// Functions //////////
 
   function getMovies() {
-    // return $http.get(API_PATH + 'posts/list/');
+    let api = 'http://api.themoviedb.org/3/';
+
+    // movies released in last month
+    // sorry hardcoding the date for now!
+    let path = 'discover/movie?primary_release_date.gte=2016-02-02&primary_release_date.lte=2016-03-02';
+
+    let key = '<KEYHERE>';
+
+    let url = api + path + '?api_key=' + key;
+
+    // let URL = '/discover/movie?primary_release_date.gte=2016-02-02&primary_release_date.lte=2016-03-02'
+
+    return $http.get(url);
   }
 
-  function getMovie(postObj) {
-    // return $http.post(API_PATH + 'posts/add/', postObj);
+  function getMovie(movieId) {
+    // TODO
   }
 
 }
