@@ -1,0 +1,96 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  // @include font-feature-settings("kern", "liga", "pnum");
+
+  -webkit-font-smoothing: antialiased;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  color: $base-font-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  line-height: $h1-line-height;
+  margin-top: $h1-margin-top;
+  margin-bottom: $h1-margin-bottom;
+  color: $heading-color;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  line-height: $h2-line-height;
+  margin-top: $h2-margin-top;
+  margin-bottom: $h2-margin-bottom;
+  color: $heading-color;
+}
+
+h3 {
+  font-size: $h3-font-size;
+  line-height: $h3-line-height;
+  margin-top: $h3-margin-top;
+  margin-bottom: $h3-margin-bottom;
+  color: $heading-color;
+}
+
+h4 {
+  font-size: $h4-font-size;
+  line-height: $h4-line-height;
+  margin-top: $h4-margin-top;
+  margin-bottom: $h4-margin-bottom;
+  color: $heading-color;
+}
+
+h5,
+h6 {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  margin: 0 0 $spacing-small;
+}
+
+p {
+  margin: 0 0 $spacing-small;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color 0.1s linear;
+
+  &:active,
+  &:focus {
+    color: darken($action-color, 15%);
+    outline: none;
+  }
+  &:hover {
+    color: darken($action-color, 15%);
+    text-decoration: underline;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $spacing-normal 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}

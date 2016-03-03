@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="mlApp" ng-strict-di> <!-- TODO programatically bootstrap app -->
+<head>
+  <style>
+    .ng-hide {
+      display: none!important;
+    }
+  </style>
+
+  <title ng-bind="title"></title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+  <base href="/">
+
+  <script src=".tmp/app/app.js"></script>
+
+</head>
+<body class="skin-1-ctn">
+  <!--[if lt IE 11]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-switch="layout">
+    <!-- TODO dynamically set the layout from layout service -->
+    <div ng-switch-when="app-layout">
+      <div ng-include="'/common/layout/app-layout/app-layout.html'"></div>
+    </div>
+  </div>
+
+  <div ng-show="false">
+    <div class="splash-page-ctn">
+      <div class="loading-indicator-ctn">
+        Loading...
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

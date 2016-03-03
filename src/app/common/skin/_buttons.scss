@@ -1,0 +1,58 @@
+a.btn,
+button {
+  -webkit-font-smoothing: antialiased;
+  background-color: $action-color;
+  border-radius: $box-radius-normal;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  // font-weight: 600;
+  line-height: $base-line-height;
+  line-height: $base-line-height;
+  padding: $spacing-tiny $spacing-normal;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background-color: darken($action-color, 7%);
+    color: #ffffff;
+    outline: 0;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &.is-active {
+    background-color: darken($action-color, 14%);
+  }
+
+  & + a.btn,
+  & + button {
+    margin-left: 0.5rem;
+  }
+}
+
+
+.icon-nav {
+  $icon-dimension: grid-dimension(1, $grid-column-width, $grid-gutter-width);
+
+  display: inline-block;
+  width: $icon-dimension;
+  height: $icon-dimension;
+  line-height: $icon-dimension;
+  vertical-align: middle;
+  font-size: $base-font-size * $scale-factor;
+  text-align: center;
+  border-radius: $box-radius-small;
+  cursor: pointer;
+}
+
+

@@ -1,0 +1,171 @@
+<div class="app-layout-ctn">
+
+  <div class="nav-ctn">
+
+    <div class="search-ctn">
+      Search
+    </div>
+
+    <nav class="menu-ctn">
+      <h3>Main</h3>
+      <ul class="main-nav">
+        <li>
+          <a>Link</a>
+        </li>
+        <li>
+          <a>Link</a>
+        </li>
+        <li>
+          <a>Link</a>
+        </li>
+      </ul>
+      <h3>Movie Circles</h3>
+      <ul class="circles-nav">
+        <li>
+          <a>Link</a>
+        </li>
+        <li>
+          <a>Link</a>
+        </li>
+        <li>
+          <a>Link</a>
+        </li>
+      </ul>
+      <h3>Collections</h3>
+      <ul class="collections-nav">
+        <li>
+          <a>Link</a>
+        </li>
+        <li>
+          <a>Link</a>
+        </li>
+        <li>
+          <a>Link</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="movies-ctn" ui-view>
+  </div>
+
+  <div class="network-ctn">
+
+    <div class="user-ctn">
+      User
+    </div>
+
+    <div class="friends-ctn">
+      <ul class="online-friends">
+        <h3>Online Friends</h3>
+        <li>
+          <a>Link</a>
+        </li>
+        <li>
+          <a>Link</a>
+        </li>
+        <li>
+          <a>Link</a>
+        </li>
+      </ul>
+      <h3>Offline Friends</h3>
+      <ul class="offline-friends">
+        <li>
+          <a>Link</a>
+        </li>
+        <li>
+          <a>Link</a>
+        </li>
+        <li>
+          <a>Link</a>
+        </li>
+      </ul>
+    </div>
+    <div class="chat-ctn">
+      Chat
+    </div>
+
+  </div>
+
+
+
+
+
+</div>
+
+<style>
+
+
+</style>
+
+
+<div class="app-layout-ctn" style="display:none;">
+
+  <!-- Top Bar -->
+  <header class="action-bar-ctn">
+    <nav class="site-logo-ctn">
+      <a class="icon-nav is-active" title="Home">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    <!--div class="controls-ctn">
+      <a class="icon-nav home-btn"
+         ui-sref="home"
+         ui-sref-active="is-active"
+         title="Home">
+        <i class="fa fa-dashboard"></i>
+      </a>
+      <div class="messaging-status-ctn">
+        <so-messaging-controls></so-messaging-controls>
+      </div>
+    </div-->
+    <div class="primary-filters-ctn" ui-view="primaryFilters">
+    </div>
+    <nav class="profile-nav-ctn">
+      <span class="icon-nav">
+        <i class="messaging-toggle fa fa-user"></i>
+      </span>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-content-ctn">
+    <!-- Navigation -->
+    <div class="top-level-nav-ctn">
+      <nav class="app-main-nav-ctn">
+      </nav>
+      <!--div class="supplemental-actions-ctn">
+        <ul class="supplemental-actions">
+          <li class="nav-item">
+            <a class="icon-nav" title="Settings">
+              <i class="fa fa-sliders"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="icon-nav" title="Print">
+              <i class="fa fa-print"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="icon-nav" title="Help">
+              <i class="fa fa-question"></i>
+            </a>
+          </li>
+        </ul>
+      </div-->
+    </div>
+
+    <!-- Content -->
+    <section class="content-area-ctn">
+      <header class="contextual-filter-ctn" ui-view="contextualFilters">
+      </header>
+
+      <div class="content-ctn" ui-view></div>
+
+      <footer class="content-footer-ctn">
+      </footer>
+    </section>
+  </div>
+
+</div>

@@ -1,0 +1,115 @@
+// ------------------------------------------------------ //
+// ----- Global Imports --------------------------------- //
+// ------------------------------------------------------ //
+@import "../../../common/skin/globalImports";
+
+
+// ------------------------------------------------------ //
+// ----- Variables and Placeholder Selectors ------------ //
+// ------------------------------------------------------ //
+
+
+// ------------------------------------------------------ //
+// ----- Layout ----------------------------------------- //
+// ------------------------------------------------------ //
+
+body {
+  margin: 4rem 0 2rem;
+  background: #390608;
+}
+
+.app-layout-ctn {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+
+  width: 100%;
+  max-width: 96rem; // TODO add some media query breakpoints
+  margin: 0 auto;
+  border-radius: 2rem;
+
+  .nav-ctn {
+    flex: 0 0 20rem;
+    background: #11171c;
+    overflow: hidden;
+  }
+
+  .movies-ctn {
+    flex: 1 1 auto;
+    padding: 1rem;
+  }
+
+  .network-ctn {
+    flex: 0 0 20rem;
+    background: #ecedef;
+    overflow: hidden;
+  }
+}
+
+.nav-ctn {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+
+  .search-ctn {
+    flex: 0 0 10rem;
+    padding: 1rem;
+    background: #cc4d4d;
+    padding: 1rem;
+  }
+
+  .menu-ctn {
+    flex: 1 1 auto;
+    padding: 1rem;
+  }
+}
+
+.movies-ctn {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+
+  .movie-controls-ctn {
+    flex: 0 0 10rem;
+    padding: 1rem;
+  }
+  .movie-list-ctn {
+    flex: 1 1 auto;
+    padding: 1rem;
+  }
+}
+
+.network-ctn {
+  display: flex;
+  flex-direction: column;
+
+  .user-ctn {
+    flex: 0 0 10rem;
+    background: #74c0c8;
+    color: #ffffff;
+    padding: 1rem;
+  }
+  .friends-ctn {
+    flex: 1 1 auto;
+    padding: 1rem;
+  }
+  .chat-ctn {
+    flex: 0 0 10rem;
+    background: #c4ccd8;
+    color: #ffffff;
+    padding: 1rem;
+  }
+}
+
+// TODO move into movies scss
+.movie-controls-ctn {
+  display: flex;
+
+  .title {
+    flex: 1 1 auto;
+  }
+  .sortby-ctn,
+  .update-ctn {
+    flex: 1 1 30%;
+  }
+}

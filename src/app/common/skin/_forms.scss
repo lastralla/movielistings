@@ -1,0 +1,144 @@
+$input-padding-size: $spacing-small / 2;
+
+.form-ctn {
+
+  width: grid-dimension(6, $grid-column-width, $grid-gutter-width);
+
+  &.sm {
+    width: grid-dimension(4, $grid-column-width, $grid-gutter-width);
+  }
+
+  &.lg {
+    width: grid-dimension(8, $grid-column-width, $grid-gutter-width);
+    // border: 1px solid grey;
+  }
+}
+
+.button-bar {
+  margin: $spacing-normal 0;
+}
+
+
+fieldset {
+  border: $base-border;
+  border-radius: $box-radius-small;
+  margin: $spacing-normal 0 $spacing-small;
+  padding: $spacing-small;
+
+  legend {
+    margin: 0 0 $spacing-tiny $spacing-tiny;
+    padding: 0 $spacing-tiny;
+    font-size: $secondary-font-size;
+    font-family: $heading-font-family;
+    color: $heading-color;
+  }
+}
+
+label,
+input,
+select,
+textarea {
+  display: block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+
+}
+
+label {
+  margin: $spacing-small 0 0;
+  line-height: $base-line-height;
+  font-weight: 500;
+  font-size: $secondary-font-size;
+  color: $heading-color;
+}
+
+:focus,
+input[type="file"]:focus {
+    border-color: $action-color;
+    outline: none;
+}
+
+input,
+select,
+textarea {
+  margin: 0;
+  width: 100%;
+  padding: $input-padding-size;
+  line-height: $base-line-height;
+  vertical-align: middle;
+  box-sizing: border-box;
+
+  border: .1rem solid $base-line-color;
+  border: $base-border;
+  border-radius: $box-radius-normal;
+  background: #ffffff;
+
+  &:disabled {
+    background: #fafafa;
+    color: lighten($base-font-color, 35%);
+    cursor: not-allowed;
+
+    &:hover {
+      border-color: inherit;
+    }
+  }
+
+  &:hover {
+    border-color: mix($base-line-color, $brand-primary, 70%);
+  }
+
+  &:focus {
+    border: .1rem solid $brand-primary;
+    outline: none;
+  }
+
+  &[type="file"] {
+    padding: 0 0 0 0;
+    border: none;
+  }
+
+  &[type="date"] {
+    padding-right: 0;
+  }
+
+  &[type="checkbox"],
+  &[type="radio"] {
+    width: auto;
+    display: inline-block;
+    line-height: $base-line-height;
+    margin: 0 $spacing-small 0 $spacing-tiny;
+    padding: 0.2rem 0;
+    border: none;
+  }
+
+  &[type="file"] {
+    width: auto;
+    cursor: pointer;
+    font-size: $secondary-font-size;
+
+    &:hover {
+      background: #fafafa;
+    }
+  }
+
+  &[type="file"]::-webkit-file-upload-button {
+    height: 100%;
+    background-color: $action-color;
+    border-radius: $box-radius-normal;
+    border: none;
+    color: #ffffff;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+select,
+input {
+  height: ($base-line-height * $line-height-scale) + (2 * $input-padding-size);
+}

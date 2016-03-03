@@ -1,0 +1,4 @@
+@function grid-dimension($cols, $col-width, $gutter-width) {
+  @return ($col-width * $cols) + ($gutter-width * ($cols - 1));
+}
+

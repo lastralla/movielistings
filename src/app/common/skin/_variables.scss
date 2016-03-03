@@ -1,0 +1,126 @@
+// ---------- Responsive ---------- //
+$scale-factor: 1.25; // major third
+$line-height-scale: 1.1; // major third
+$rem-scale: 1.6;
+
+
+
+// ---------- Grid System ---------- //
+$grid-column-width: 4.2rem;
+$grid-gutter-width: 0.8rem;
+$grid-columns: 20;
+$grid-max-width: 100rem;
+
+
+
+// ---------- Typography ---------- //
+$base-font-family: sans-serif;
+$heading-font-family: $base-font-family;
+
+// http://www.gridlover.net/app/ (major third scale)
+$base-font-size: 1rem * $rem-scale;
+$base-line-height: $base-font-size * $scale-factor;
+
+$secondary-font-size: $base-font-size / $scale-factor;
+$secondary-line-height: $base-line-height / $scale-factor;
+
+$h1-font-size: 1.9375rem * $rem-scale;
+$h1-line: 1rem * $line-height-scale * $rem-scale;
+$h1-lines: 2;
+$h1-line-height: $h1-line * $h1-lines;
+$h1-margin-top: 2 * $h1-line;
+$h1-margin-bottom: 1 * $h1-line;
+
+$h2-font-size: 1.5625rem * $rem-scale;
+$h2-line: 1rem * $line-height-scale * $rem-scale;
+$h2-lines: 2;
+$h2-line-height: $h2-line * $h2-lines;
+$h2-margin-top: 1 * $h2-line;
+$h2-margin-bottom: 1 * $h2-line;
+
+$h3-font-size: 1.25rem * $rem-scale;
+$h3-line: 1rem * $line-height-scale * $rem-scale;
+$h3-lines: 1;
+$h3-line-height: $h3-line * $h3-lines;
+$h3-margin-top: 1 * $h3-line;
+$h3-margin-bottom: 1 * $h3-line;
+
+$h4-font-size: 1rem * $rem-scale;
+$h4-line: 1rem * $line-height-scale * $rem-scale;
+$h4-lines: 1;
+$h4-line-height: $h4-line * $h4-lines;
+$h4-margin-top: 1 * $h4-line;
+$h4-margin-bottom: 1 * $h4-line;
+
+
+
+// ---------- Icon Fonts ---------- //
+
+
+
+// ---------- Generic Element Styles ---------- //
+$spacing-large: $base-line-height * $scale-factor;
+$spacing-normal: $base-line-height;
+$spacing-small: $grid-gutter-width;
+$spacing-tiny: $grid-gutter-width / 2;
+
+$box-radius-large: $grid-gutter-width;
+$box-radius-normal: $grid-gutter-width / 2;
+$box-radius-small: $grid-gutter-width / 4;
+
+$base-z-index: 0;
+
+
+
+// ---------- Named Colors ---------- //
+$brand-green: #1c8884;
+$black-tinted: #1d2526;
+
+$grey-dark: #333333;
+$grey-mid: #74858f;
+$grey-light: #c1ccd2;
+$grey-verylight: #c1ccd2;
+$grey-superlight: #e4e3e9;
+
+$facebook-color: #3b5999;
+$twitter-color: #5c90cc;
+
+
+
+// ---------- Colors by Use ---------- //
+$brand-primary: $brand-green;
+$brand-secondary: mix($grey-dark, $grey-light, 75%);
+$action-color: $brand-primary;
+
+$base-neutral: $grey-mid;
+$base-neutral-light: $grey-light;
+
+$base-bg-color: #ffffff;
+
+$base-font-color: $black-tinted;
+$heading-color: #3c4c55;
+
+$base-line-color: $grey-superlight;
+$base-line-color-darker: $grey-light;
+$base-border: 0.1rem solid $base-line-color;
+
+// $base-shadow-color: transparentize($brand-secondary, 0.4);
+// $base-shadow: inset 0.1rem 0.3rem $base-shadow-color;
+
+$link-color: $action-color;
+$link-color-active: darken($link-color, 5%);
+$link-color-visited: darken($link-color, 5%);
+
+  $state-active: #2dbcb5;
+  $state-inactive: #7ee0dd;
+  $state-disabled: #e8f5f5;
+
+$caution-color: #dd0000;
+$notice-color: #ff9900;
+$confirmation-color: #009900;
+
+
+
+// ---------- Breakpoints ---------- //
+// $tablet: new-breakpoint(max-width 768px 8);
+// $mobile: new-breakpoint(max-width 480px 4);

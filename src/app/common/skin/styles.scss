@@ -1,0 +1,41 @@
+// ------------------------------------------------------ //
+// ----- Global Imports --------------------------------- //
+// ------------------------------------------------------ //
+@import "./globalImports";
+
+
+// ------------------------------------------------------ //
+// ----- Placeholder Selectors -------------------------- //
+// ------------------------------------------------------ //
+
+
+// ------------------------------------------------------ //
+// ----- Common Imports --------------------------------- //
+// ------------------------------------------------------ //
+@import "normalize";
+@import "base";
+@import "typography";
+@import "buttons";
+@import "forms";
+@import "tables";
+@import "lists";
+
+
+// ------------------------------------------------------ //
+// ----- Common Styles ---------------------------------- //
+// ------------------------------------------------------ //
+
+.splash-page-ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .loading-indicator-ctn {
+    width: 20rem;
+    padding: $spacing-normal;
+    text-align: center;
+    border-radius: $box-radius-normal;
+    background: $base-neutral-light;
+  }
+}

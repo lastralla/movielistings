@@ -1,0 +1,12 @@
+# npm packages
+node_modules
+
+# gulp working folder
+.tmp
+
+# dist folder
+build
+
+.DS_Store
+
+src/app/common/skin/fonts
